@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Downloaded market data (regenerable; fixtures live in tests/fixtures)
+data/raw/
+data/processed/
+*.parquet
+!tests/fixtures/*.parquet
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
